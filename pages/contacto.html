@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto a los administradores del sitio web">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header id="banner">
+        <h1>Contacto</h1>
+        <nav>
+            <ul class="banner__menuPrincipal">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/comunidad.html">Comunidad</a>
+                <li><a href="../pages/reviews.html">Reviews</a></li>
+                <li><a href="../pages/clasificados.html">Clasificados</a></li>
+                <li><a href="../pages/login.html">Ingresar</a></li>
+                </ul>
+        </nav>
+        <h4>Contacta con nosotros</h4>
+    </header><br>
+<!--Este formulario es para informar sobre errores del sitio, suscribirse al newsletter o para solicitar empleo-->
+        <form class="formulario">
+            <fieldset class="contenidoForm">
+                Nombre<input type="text" name="Nombre" placeholder="Ingresa tu nombre">
+                Apellido<input type="text" name="Apellido" placeholder="Ingresa tu apellido">
+                Email<input type="text" name="Email" placeholder="Ingresa tu email">
+                <br>
+                Género<select name="Género">
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="NB">No binario</option>
+                    <option value="PNC">Prefiero no contestar</option>
+                   
+                <input type="Checkbox" name="" id="">Consulta
+                <input type="Checkbox" name="" id="">Reportar un error 
+                <input type="Checkbox" name="" id="">Solicitud de empleo
+                <br>
+                ¿Desea recibir información sobre nuevas reseñas y novedades a través de nuestro newsletter?
+                <br>
+                <label>Sí
+                <input type="radio" name="Nesletter">
+                </label>
+                <label>No                 
+                <input type="radio" name="Newsletter">
+            <h5>Comentarios</h5>
+                <textarea name="Comentarios" class="cajaComentarios" cols="30" rows="10">Escribe aquí tu consulta</textarea>
+                <br>
+                <input type="reset" value="Restablecer formulario"/>
+                <input type="submit" value="Enviar formulario"/>
+                </fieldset>
+        </form><br>
+    <footer class="sectionFondo__footer">
+        <ul class="sectionFondo__menuInferior">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/comunidad.html">Comunidad</a>
+            <li><a href="../pages/reviews.html">Reviews</a></li>
+            <li><a href="../pages/clasificados.html">Clasificados</a></li>
+            <li><a href="../pages/login.html">Ingresar</a></li>
+            </ul><br>
+            E.M inc 2021 All rights reserved
+</footer>
+</body>
+</html>
