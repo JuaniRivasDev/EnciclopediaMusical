@@ -25,16 +25,7 @@ header {
 		}
 	}
 }
-.sectionFondo {
-	width: 600px;
-	margin: 20px;
-	padding: 10px;
-	border: 5px solid lightblue;
-	&:hover {
-		transform: scale(1.1);
-		transition: 1s;
-	}
-}
+
 .sectionFondo__menuInferior {
 	font-size: 20px;
 	display: flex;
@@ -42,12 +33,12 @@ header {
 	align-items: flex-start;
 }
 
-.sectionFondo__footer {
-	width: 100%;
-	margin: -10px;
-	border: 5px;
-	padding: 9px;
-	background-image: linear-gradient(to top, rgb( 5, 77, 130 ),rgb(143, 201, 245));
+.bsFooter { 
+	background: #ddd;
+	
+}
+.copyright {
+	background: #bbb; 
 }
 #banner {
 	width: 100%;
@@ -71,6 +62,11 @@ header {
 				border: 1px;
 			}
 		}
+	}
+}
+@media only screen and (max-width: 400px){
+	.tituloReviews__nav {
+		width:100%;
 	}
 }
 .fluidRow__videos {

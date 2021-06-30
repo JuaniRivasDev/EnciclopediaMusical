@@ -1,7 +1,7 @@
 {
   "name": "enciclopedia-_musical_juan_rivas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Base de datos de instrumentos musicales",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

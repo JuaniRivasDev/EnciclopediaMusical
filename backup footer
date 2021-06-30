@@ -1,0 +1,10 @@
+<footer class="sectionFondo__footer">
+    <ul class="sectionFondo__menuInferior">
+        <li><a href="#banner">Volver arriba</a></li>
+        <li><a href="pages/comunidad.html">Comunidad</a>
+        <li><a href="pages/reviews.html">Reviews</a></li>
+        <li><a href="pages/contacto.html">Contacto</a></li>
+        <li><a href="pages/login.html">Ingresar</a></li>
+        </ul><br>
+        E.M inc 2021 All rights reserved
+</footer>
