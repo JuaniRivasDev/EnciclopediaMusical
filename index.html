@@ -1,217 +1,479 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Base de datos sobre instrumentos musicales, micrófonos y equipos de audio en general, actualizaciones constantes y una extensa comunidad activa.">
-    <meta name="keywords" content="Instrumentos, música, microfonos, audio, pro-audio">
-    <title>Enciclopedia Musical</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Enciclopedia Musical</title>
+  <meta content="EM" name="Sitio web dedicado a compartir información sobre instrumentos musicales y audio pro">
+  <meta content="" name="Instruments; Pro Audio; Reviews">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">>
+  <link href="scss/style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-xs-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Enciclopedia Musical</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link" href="pages/comunidad.html">Comunidad</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="pages/clasificados.html">Clasificados</a>
-                        </li>
-                            <a class="nav-link" href="pages/login.html">Ingresar</a>
-                          </li>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="pages/reviews.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Reviews
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Instrumentos de cuerda</a>
-                            <a class="dropdown-item" href="#">Instrumentos de percusión</a>
-                            <a class="dropdown-item" href="#">Micrófonos</a>
-                            <a class="dropdown-item" href="#">Accesorios</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-            </div>
-</header>
-<section class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12 col-xs-12">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data inverval="50">
-                    <img src="assets/imgs/ukeleles1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Instrumentos de cuerda</h5>
-                      <p>Guitarras, bajos, ukeleles, mandolinas, etc.</p>
-                    </div>
-                  </div>
-                <div class="carousel-item" data interval="50">
-                    <img src="assets/imgs/percus1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                      <h5>Instrumentos de percusión</h5>
-                      <p>Baterías, congas, timbales, djembés, etc.</p>
-                    </div>
-                  </div>
-                <div class="carousel-item" data interval="50">
-                    <img src="assets/imgs/micros1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Micrófonos</h5>
-                      <p>Todo sobre modelos de micrófonos e interfaces de audio.</p>
-                    </div>
-                </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+  <!-- ======= Barra superior ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i><a href="#">contacto@emweb.com</a>
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html">E<span>M</span></a></h1>
+      </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Inicio</a></li>
+          <li><a href="#about">Sobre el sitio</a></li>
+          <li><a href="#services">Secciones</a></li>
+          <li><a href="#team">Colaboradores</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li class="drop-down"><a href="pages/articulos.html">Artículos</a>
+            <ul>
+              <li><a href="#">Noticias</a></li>
+              <li><a href="#">Tutoriales</a></li>
+              <li class="drop-down"><a href="#">Reviews</a>
+                <ul>
+                  <li><a href="#">Instrumentos de cuerda</a></li>
+                  <li><a href="#">Instrumentos de percusión</a></li>
+                  <li><a href="#">Instrumentos de viento</a></li>
+                  <li><a href="#">Instrumentos regionales</a></li>
+                  <li><a href="#">Equipos de audio profesional</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="pages/tienda.html">Tienda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ======= Slide ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" style="background-image: url(assets/img/Ins-colgados.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Bienvenido a Enciclopedia Musical</h2>
+                <p class="animate__animated animate__fadeInUp">El sitio web más completo sobre instrumentos musicales y audio profesional, creemos que es importante preservar
+                  toda la información posible sobre todos los modelos de instrumentos de los que se tenga registro. Para ello contamos con un experimentado equipo de investigadores
+                  y músicos profesionales colaboradores de todo el mundo.
+                </p>
+                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Leer más</a>
               </div>
-
-    <p><em ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusamus rem odit reiciendis nam illum maiores necessitatibus dolore explicabo totam quia nihil nesciunt labore id doloremque dolor omnis, perferendis non. em></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong> Rerum delectus porro temporibus repellendus suscipit quisquam odio explicabo reiciendis animi ex perspiciatis quis quae atque dolores, nemo, fugit doloremque, labore quas.</strong></p>
-    </article>
-</section>
-<section>
-  <article>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, expedita. Dicta et hic aperiam unde libero fugit officia earum officiis ad tempora sunt ex nesciunt, nihil totam, reprehenderit itaque delectus.</p>
-  </article>
-</section>
-</section>
-<!--Aquí se muestran los colaboradores principales en cuanto a contenido de reseñas del sitio-->
-<h3>Nuestros especialistas</h3>
-<br>
-<section>
-  <div class="row row-cols-1 row-cols-md-2">
-    <div class="col mb-4">
-      <div class="card">
-        <img src="assets/imgs/guitarist.jpg" class="card-img-top" alt="Especialista 1">
-        <div class="card-body">
-          <h5 class="card-title">Alan Vilmes</h5>
-          <p class="card-text">Con un extenso conocimiento en guitarras y ukeleles Alan viene a compartir su experiencia y su entendimiento 
-            en sus reseñas que puedes leer ahora mismo en nuestra sección de Reviews.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(assets/img/consola.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Todo sobre el audio profesional</h2>
+                <p class="animate__animated animate__fadeInUp">Además de instrumentos, este sitio cuenta con información detallada y actualizada 
+                  sobre todo tipo de equipos de audio profesional. Ya sea si eres un técnico experto o un principiante en el mundo del pro audio, 
+                  Enciclopedia Musical tiene toda la info que necesitas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(assets/img/percus-folk.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">También tenemos en cuenta lo tradicional</h2>
+                <p class="animate__animated animate__adeInUp">No hay mucha informacion en la web sobre instrumentos folclóricos (regionales), 
+                  este sitio pretende tener la mayor cantidad de información actualizada sobre los mismos, ya sea por investigación de nuestro
+                  equipo o por colaboraciones de los usuarios, buscamos ser el sitio web con la información más completa sobre estos instrumentos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ri-arrow-left-line" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ri-arrow-right-line" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <main id="main">
+    <!-- ======= Sección "Sobre el sitio" ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row content">
+          <div class="col-lg-6">
+            <h2>Explora todo el conocimiento musical disponible</h2>
+            <h3>Ya sea si eres un entusiasta de los instrumentos o solo estás buscando información para comprar tu primer/próximo instrumento,
+              este sitio es para ti.</h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+            Suscríbete a nuestro newsletter al final de la página para obtener los siguientes beneficios:
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i>Mantente al día con las novedades sobre los nuevos productos de tus compañias favoritas.</li>
+              <li><i class="ri-check-double-line"></i>Recibe notificaciones sobre nueva actividad en nuestos foros.</li>
+              <li><i class="ri-check-double-line"></i>Ponte en contacto con profesionales de la industria.</li>
+            </ul>
+            <p class="font-italic">
+              No es necesario suscribirte para acceder a todo el contenido, pero sí te recomendamos crearte una cuenta para poder
+              interactuar mejor con el resto de los usuarios, comentar artículos y <strong>crear tus propias reviews</strong> .
+            </p>
+            <a href="pages/login.html" class="btn-get-started">Iniciar sesión</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Sección de lista sobre el sitio ======= -->
+    <section id="about-list" class="about-list">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="icon-box mt-5 mt-lg-0">
+              <i class='bx bx-headphone'></i>
+              <h4>Producción musical</h4>
+              <p>Aprende con nuestros artículos y tutoriales de producción musical, <strong>creatividad es tu límite</strong> .</p>
+            </div>
+            <div class="icon-box mt-5">
+              <i class='bx bx-message-detail'></i>
+              <h4>Foros de discusión</h4>
+              <p>Ten acceso a nuestros foros de discuión, ponte en contacto con músicos, productores y luthiers de todo
+                el mundo, mantente activo y obtén beneficios adicionales por tu colaboración al sitio.
+              </p>
+            </div>
+            <div class="icon-box mt-5">
+              <i class='bx bxs-videos'></i>
+              <h4>Galería multimedia</h4>
+              <p>Mira miles de fotos y videos de los modelos que te interesen y no te quedes con ninguna duda.</p>
+            </div>
+            <div class="icon-box mt-5">
+              <i class='bx bxs-group'></i>
+              <h4>Colabora y trabaja con proyectos profesionales</h4>
+              <p>Graba o produce tu música y colabora con proyectos profesionales estés dónde estés a través de la sección 
+                <strong>Freelancers</strong> de nuestro foro.
+              </p>
+            </div>
+          </div>
+          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("assets/img/studio.jpg");'></div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Conteo ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+        <div class="text-center title">
+          <h3>Lo que hemos construido hasta ahora</h3>
+          <p>Estas son las estadísticas del sitio web al día de la fecha.</p>
+        </div>
+        <div class="row counters">
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">232</span>
+            <p>Usuarios registrados</p>
+          </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">521</span>
+            <p>Artículos</p>
+          </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">320.000</span>
+            <p>Mensajes en los foros</p>
+          </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">12</span>
+            <p>Colaboradres</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Secciones ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+        <div class="section-title">
+          <span>Secciones</span>
+          <h2>Secciones</h2>
+          <p>Echa un vistazo a las diferentes secciones del sitio</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class='bx bx-cart-alt'></i>
+              <h4><a href="pages/tienda.html">Tienda</a></h4>
+              <p>Nuestra tienda oficial, por el momento solo vendemos cuerdas y accesorios, si quieres acceder 
+                a un instrumento te invitamos a que visites nuestra sección de clasificados.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class='bx bx-purchase-tag'></i>
+              <h4><a href="pages/clasificados.html">Clasificados</a></h4>
+              <p>¿Buscas comprar o vender un instrumento?¿Estás en la búsqueda de algún músico o productor para tu proyecto? 
+                Esta sección es la que buscas.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="icofont-image"></i>
+              <h4><a href="#">Galería multimedia</a></h4>
+              <p>Si buscas fotos y/o videos sobre los instrumentos o equipos de tu interés, esta es la sección para ti.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class='bx bxs-dashboard'></i>
+              <h4><a href="#">Artículos</a></h4>
+              <p>Aquí puedes ver las noticias de los fabricantes, tutoriales de grabación/producción musical y reseñas completas.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="icofont-earth"></i>
+              <h4><a href="pages/foro.html">Foro</a></h4>
+              <p>Accede a los foros de discusión del sitio, debate e intercambia información sin límites.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class='bx bx-envelope'></i>
+              <h4><a href="#">Contacto</a></h4>
+              <p>Si tienes alguna duda, sugerencia o quieres unirte a nuestro equipo de colaboradores ponte 
+                en contacto con nosotros a través del formulario.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======Acá figuran los colaboradores destacados======= -->
+    <section id="team" class="team">
+      <div class="container">
+        <div class="section-title">
+          <span>Colaboradores</span>
+          <h2>Colaboradores</h2>
+          <p>Estos son los principales colaboradores que generan el mejor contenido con actualizaciones constantes.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="colaborador1"></div>
+              <div class="member-info">
+                <h4>Randy Brown</h4>
+                <span>Guitarrista de sesión</span>
+                <p>Especialista en guitarra e instrumentos de cuerda en general.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""><i class='bx bxl-spotify'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt="colaborador2"></div>
+              <div class="member-info">
+                <h4>Janet Wilmes</h4>
+                <span>Bajista de sesión</span>
+                <p>Especialista del bajo eléctrico y canto con gran conocimiento en pro audio.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""><i class="bx bxl-spotify"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt="colaborador3"></div>
+              <div class="member-info">
+                <h4>Brandon Williams</h4>
+                <span>DJ y productor musical</span>
+                <p>DJ profesional y técnico en sonido con amplia experiencia en producción.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""><i class='bx bxl-spotify'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt="colaborador4"></div>
+              <div class="member-info">
+                <h4>Askar Abayev</h4>
+                <span>Percusionista</span>
+                <p>Percusionista especializado en instrumentos de percusión africanos.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""><i class='bx bxl-spotify'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Contacto ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Contacto</span>
+          <h2>Contacto</h2>
+          <p>Ponte en contacto con nosotros y nuestro equipo responderá todas tus dudas.</p>
+        </div>
+      </div>
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.847277121899!2d-64.19715208530617!3d-31.418333603488975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2809dcd2dad%3A0x5236fcbe8dd6c210!2sBlvd.%20San%20Juan%20670%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1626618715168!5m2!1ses-419!2sar" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="container">
+        <div class="info-wrap mt-5">
+          <div class="row">
+            <div class="col-lg-4 info">
+              <i class="ri-map-pin-line"></i>
+              <h4>Ubicación:</h4>
+              <p>Blvd San Juan 670<br>Córdoba, CP 5000</p>
+            </div>
+            <div class="col-lg-4 info mt-4 mt-lg-0">
+              <i class="ri-mail-line"></i>
+              <h4>Email:</h4>
+              <p>contacto@emweb.com</p>
+            </div>
+            <div class="col-lg-4 info mt-4 mt-lg-0">
+              <i class="ri-phone-line"></i>
+              <h4>Teléfono:</h4>
+              <p>+54 3517340215</p>
+            </div>
+          </div>
+        </div>
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Cargando</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Tu mensaje ha sido enviado</div>
+          </div>
+          <div class="text-center"><button type="submit">Enviar</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3 class="text-light"><a href="index.html">EM</a></h3>
+              <h6>Enciclopedia Musical</h6>
+              <p>
+                Blvd. San Juan 670<br>
+                Córdoba, Argentina<br><br>
+                <strong>Teléfono:</strong> +54 3517340215<br>
+                <strong>Email:</strong> contacto@emweb.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Enlaces de utilidad</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#header">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Sobre el sitio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Secciones</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terminos del servicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Política de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nuestras secciones</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="pages/foro.html">Foro</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="pages/clasificados.html">Clasificados</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="pages/articulos.html">Artículos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="pages/tienda.html">Tienda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Logearse</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Suscribite a nuestro newsletter</h4>
+            <p>Mantente al día con todas las novedades del sitio</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribirse">
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col mb-4">
-      <div class="card">
-        <img src="assets/imgs/drummer.jpg" class="card-img-top" alt="Especialista 2">
-        <div class="card-body">
-          <h5 class="card-title">Tony Zabka</h5>
-          <p class="card-text">Con un feeling insuperable además de una larga trayectoria en percusión, sus reseñas no dejan detalle
-            alguno sin explorar cuando se trata de instrumentos de percusión, sin mencionar su buen entendimiento 
-            del proceso de armado de instrumentos..</p>
-        </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>EM inc. 2021</span></strong> Todos los derechos reservados
+      </div>
+      <div class="credits">
+        Desarrollado por <a href="rivasj.dev@gmail.com">Juan I. Rivas</a>
       </div>
     </div>
-    <div class="col mb-4">
-      <div class="card">
-        <img src="assets/imgs/singer.jpg" class="card-img-top" alt="Especialista 3">
-        <div class="card-body">
-          <h5 class="card-title">Ana Estevez</h5>
-          <p class="card-text">Ingeniera de sonido con amplios conocimientos en micrófonos y equipos de audio profesional, no 
-            te pierdas sus detalladas reseñas y recomendaciones ya sea si eres principiante o conocedor del audio profesional.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <img src="assets/imgs/bassplayer.jpg" class="card-img-top" alt="Especialista 4">
-        <div class="card-body">
-          <h5 class="card-title">Frank Wong</h5>
-          <p class="card-text">Con un gran dominio del bajo y amplia experiencia como luthier, Frank nos ofrece
-            una mirada más técnica y profesional a cada instrumento analizado al ser explicado desde el punto de vista
-            de un luthier profesional.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
-  <div class="container-fluid text-center text-md-left" class="bsFooter">
-    <div class="row">
-      <div class="col-md-6 mt-md-0 mt-3">
-        <h5 class="text-uppercase">Enciclopedia Musical</h5>
-        <p>Este sitio está dedicado a preservar toda la información posible sobre todos los modelos de 
-          instrumentos musicales conocidos hasta la actualidad, con especialistas y colaboradores externos buscamos
-          que esta sea la base de datos de instrumentos musicales más completa de la web.</p>
-      </div>
-      <hr class="clearfix w-100 d-md-none pb-3">
-      <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase">Enlaces</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="pages/reviews.html">Reviews</a>
-          </li>
-          <li>
-            <a href="pages/comunidad.html">Comunidad</a>
-          </li>
-          <li>
-            <a href="pages/clasificados.html">Clasificados</a>
-          </li>
-          <li>
-            <a href="pages/login.html">Ingresar</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase">Seguinos en nuestras redes</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-            </svg> Facebook</a>
-          </li>
-          <li>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-            </svg> Instagram</a>
-          </li>
-          <li>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-            </svg> Youtube</a>
-          </li>
-          <li>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16">
-              <path d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z"/>
-            </svg> Reddit</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright text-center py-3" class="copyright">© 2021 Copyright:
-    Enciclopedia Musical E.M inc. Todos los derechos reservados
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </footer>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
